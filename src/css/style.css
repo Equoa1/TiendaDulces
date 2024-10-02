@@ -1,0 +1,65 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700; 
+    font-style: normal;
+    font-size: 20px; 
+}
+
+.container-fluid {
+    padding: 2px; /* Elimina el padding del contenedor para que ocupe todo el ancho */
+}
+
+.floating-image {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    max-width: 100%; /* Asegura que la imagen no cause desbordamiento */
+    z-index: 10; /* Asegúrate de que esté encima de otros elementos */
+}
+
+/* Oculta la imagen en dispositivos móviles */
+@media (max-width: 768px) {
+    .floating-image {
+        display: none;
+    }
+}
+
+body, html {
+    height: 100%; /* Asegura que el cuerpo y el html ocupen toda la altura */
+    margin: 0; /* Elimina márgenes predeterminados */
+    overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    background-color: beige; /* Cambia el color de fondo a beige */
+}
+
+.special-offers {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.special-offer-card {
+    margin: 0 10px;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+    border-radius: 50%; /* Esquinas redondeadas */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Color más oscuro al pasar el mouse */
+}
+
+
+
+
+
